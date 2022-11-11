@@ -1046,4 +1046,9 @@ Unerwartetes Verhalten.</string>
     <string name="blocked_by_connectivity">Blockiert durch Verbindungsoptionen</string>
     <string name="no_watch_connected">(keine Uhr verbunden)</string>
     <string name="error_asking_for_permissions">Fehler beim Anfordern der Erlaubnis</string>
+
+    <string name="key_use_data_smoothing" translatable="false">use_data_smoothing</string>
+    <string name="use_data_smoothing_summary" translatable="false">Glättet eingehende Sensordaten im Hauptdiagramm. Empfohlen, wenn die Glukosequelle die Sensormesswerte nicht selbst glättet und SMB immer aktivieren werden sollen.</string>
+    <string name="use_data_smoothing_title" translatable="false">Glättung eingehender Glucosewerte</string>
+    <string name="internal_smoothing_enabled">Sensordatenglättung ist aktiviert.</string>
 </resources>
