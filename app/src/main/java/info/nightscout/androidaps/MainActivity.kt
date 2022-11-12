@@ -343,7 +343,7 @@ class MainActivity : NoSplashAppCompatActivity() {
                 val messageSpanned = SpannableString(message)
                 Linkify.addLinks(messageSpanned, Linkify.WEB_URLS)
                 MaterialAlertDialogBuilder(this, R.style.DialogTheme)
-                    .setTitle(rh.gs(R.string.app_name) + " " + BuildConfig.VERSION)
+                    .setTitle(rh.gs(R.string.app_name) + " " + BuildConfig.VERSION + "+g7+integratio+and+smoothing")
                     .setIcon(iconsProvider.getIcon())
                     .setMessage(messageSpanned)
                     .setPositiveButton(rh.gs(R.string.ok), null)
