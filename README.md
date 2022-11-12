@@ -5,8 +5,7 @@ This AndroidAPS variant is designed to work with the Dexcom G7 over direct broad
 
 ## Smoothing 
 
-Dexcom has removed data smoothing from G6 actively and announced that [here](https://www.dexcom.
-com/en-us/faqs/why-does-past-cgm-data-look-different-from-past-data-on-receiver-and-follow-app).
+Dexcom has removed data smoothing from G6 actively and announced that [here](https://www.dexcom.com/en-us/faqs/why-does-past-cgm-data-look-different-from-past-data-on-receiver-and-follow-app).
 For G7 they simply not introduced it so that data in the app can look very weird in some situations.
 
 To overcome this problem this branch is using `backward smoothing` implemented by @justmara.
