@@ -245,6 +245,7 @@ class DetermineBasalAdapterSMBJS internal constructor(private val scriptReader: 
         this.profile.put("smb_delivery_ratio_max", SafeParse.stringToDouble(sp.getString(R.string.key_openapsama_smb_delivery_ratio_max, "0.5")))
         this.profile.put("smb_delivery_ratio_bg_range", SafeParse.stringToDouble(sp.getString(R.string.key_openapsama_smb_delivery_ratio_bg_range, "0")))
         this.profile.put("smb_max_range_extension", SafeParse.stringToDouble(sp.getString(R.string.key_openapsama_smb_max_range_extension, "1.0")))
+        this.profile.put("enableSMB_EvenOn_OddOff", sp.getBoolean(R.string.key_enableSMB_EvenOn_OddOff, false))
 
         if (profileFunction.getUnits() == GlucoseUnit.MMOL) {
             this.profile.put("out_units", "mmol/L")
@@ -300,7 +301,7 @@ class DetermineBasalAdapterSMBJS internal constructor(private val scriptReader: 
         this.microBolusAllowed = microBolusAllowed
         smbAlwaysAllowed = advancedFiltering
         currentTime = now
-        saveCgmSource = true                // for non_Libre use; was:   isSaveCgmSource
+        saveCgmSource = true // for non_Libre use; was: isSaveCgmSource
     }
 
     private fun makeParam(jsonObject: JSONObject?, rhino: Context, scope: Scriptable): Any {

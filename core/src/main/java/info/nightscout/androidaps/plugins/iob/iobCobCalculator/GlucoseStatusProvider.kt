@@ -140,8 +140,8 @@ class GlucoseStatusProvider @Inject constructor(
                 break
             }
         }
-        var autoISFAverage = oldavg
-        var autoISFDuration = minutesdur.toDouble()
+        // var autoISFAverage = oldavg                      no longer used
+        // var autoISFDuration = minutesdur.toDouble()      no longer used
 
         // mod 8: calculate 3 variables for deltas based on linear regression
         // initially just test the handling of arguments
