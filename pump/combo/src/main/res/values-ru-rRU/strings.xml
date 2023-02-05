@@ -19,7 +19,6 @@
     <string name="combo_force_disabled_notification">Небезопасное использование: в помпе установлен другой профиль базала чем первый. Цикл остановлен. Выберите первый профиль на помпе и обновите.</string>
     <string name="bolus_frequency_exceeded">Болюс с таким же количеством единиц был запрошен за последние две минуты. Для предотвращения случайных двойных болюсов и сбоев операция отменена.</string>
     <string name="combo_pump_connected_now">Сейчас</string>
-    <string name="combo_activity_reading_pump_history">Чтение истории помпы</string>
     <string name="combo_activity_setting_basal_profile">Установка базального профиля</string>
     <string name="combo_pump_cartridge_low_warrning">Низкий уровень инсулина в картридже помпы</string>
     <string name="combo_pump_battery_low_warrning">Низкий заряд батареи помпы</string>
@@ -44,7 +43,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Скорость базала на помпе изменилась, но учесть ее не удалось</string>
     <string name="combo_activity_checking_for_history_changes">Проверка изменений в истории событий помпы</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">Только что импортировано несколько болюсов с одинаковым количеством инсулина в течение одной минуты. В лог лечения может быть добавлена только одна запись. Пожалуйста проверьте помпу и вручную введите запись о болюсе через вкладку портала назначений. Убедитесь, что данному времени соответствует только одна запись о болюсе.</string>
-    <string name="about_link_urls">\n\nДокументация:\nhttps://androidaps.readthedocs.io\n\nFacebook:\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">Новый болюс старше 24 часов или запись относится к будущему. Пожалуйста убедитесь что дата на помпе установлена правильно.</string>
     <string name="combo_suspious_bolus_time">Время/дата поданного болюса неверны. Вероятно, кол-во активного инсулина IOB также неверно. Проверьте время/дату помпы.</string>
     <string name="combo_bolus_count">Отсчет болюса</string>
@@ -57,4 +55,5 @@
     <string name="combo_error_display_never">Никогда</string>
     <string name="combo_error_display_error">При ошибке</string>
     <string name="combo_error_display_always">Всегда</string>
+    <string name="unsafeusage">небезопасно</string>
 </resources>

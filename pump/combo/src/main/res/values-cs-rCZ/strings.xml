@@ -19,7 +19,6 @@
     <string name="combo_force_disabled_notification">Nebezpečné použití: pumpa má nastavený jiný bazální profil než první. Smyčka byla zakázána. Nastavte první profil a znovu načtěte.</string>
     <string name="bolus_frequency_exceeded">Během posledních dvou minut již byl požadován bolus o stejné velikosti. Jako preventivní ochrana před zdvojeným bolusem a chybám byla operace zakázána.</string>
     <string name="combo_pump_connected_now">Teď</string>
-    <string name="combo_activity_reading_pump_history">Načítání historie pumpy</string>
     <string name="combo_activity_setting_basal_profile">Nastavení bazálního profilu</string>
     <string name="combo_pump_cartridge_low_warrning">V zásobníku je málo inzulínu</string>
     <string name="combo_pump_battery_low_warrning">Slabá baterie v pumpě</string>
@@ -44,7 +43,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Bazál na pumpě byl změněn, ale čtení selhalo</string>
     <string name="combo_activity_checking_for_history_changes">Kontroluji změny v historii</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">Byly načteny bolusy stejné velikosti během jedné minuty. Do ošetření je možné přidat jen jeden. Zkontrolujte pumpu a přidejte bolus do ošetření ručně tak, aby čas nekolidoval.</string>
-    <string name="about_link_urls">\n\ndokumentace:\nhttps://androidaps.readthedocs.io\n\nfacebook:\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">Poslední bolus je starší než 24h nebo v budoucnu. Zkontrolujte čas v pumpě.</string>
     <string name="combo_suspious_bolus_time">Datum/čas podaného bolusu se zdá špatně. IOB bude chybné. Zkontrolujte čas v pumpě.</string>
     <string name="combo_bolus_count">Počet bolusů</string>
@@ -57,4 +55,5 @@
     <string name="combo_error_display_never">Nikdy</string>
     <string name="combo_error_display_error">Když dojde k chybě</string>
     <string name="combo_error_display_always">Vždy</string>
+    <string name="unsafeusage">nebezpečné použití</string>
 </resources>

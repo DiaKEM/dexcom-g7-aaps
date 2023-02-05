@@ -19,7 +19,6 @@
     <string name="combo_force_disabled_notification">Folosire nesigură: pompa folosește un alt profil decât primul. Bucla a fost dezactivată. Selectați primul profil din pompă și reîncercați.</string>
     <string name="bolus_frequency_exceeded">Un bolus de aceeași valoare a fost livrat în ultimele două minute. Pentru a preveni bolusarea accidentală dublă și pentru a evita greșelile, acesta nu se va livra.</string>
     <string name="combo_pump_connected_now">Acum</string>
-    <string name="combo_activity_reading_pump_history">Se citește istoricul din pompă</string>
     <string name="combo_activity_setting_basal_profile">Se setează profilul bazalei</string>
     <string name="combo_pump_cartridge_low_warrning">Nivelul insulinei din pompă este scăzut</string>
     <string name="combo_pump_battery_low_warrning">Nivelul bateriei pompei este scăzut</string>
@@ -44,7 +43,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Rata bazală schimbată în pompă, dar nu s-a putut actualiza</string>
     <string name="combo_activity_checking_for_history_changes">Se verifică schimbările în istoric</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">Mai multe bolusuri de aceeași valoare au fost importate. Doar o singură înregistrare va fi adăugată în tratamente. Verifcați manual în pompă și adăugați înregistrările folosind Careportal. Asigurați-vă că veți crea un bolus care nu se suprapune peste altul în timp.</string>
-    <string name="about_link_urls">\n\ndocumentație:\nhttps://androidaps.readthedocs.io\n\nfacebook:\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">Ultimul bolus este mai vechi de 24 ore sau este în viitor. Verificați ca data să fie configurată corect în pompă.</string>
     <string name="combo_suspious_bolus_time">Ora/data bolusului livrat de pompă pare eronat, IOB este probabil incorect. Verificați ora/data pompei.</string>
     <string name="combo_bolus_count">Total bolusuri</string>
@@ -52,4 +50,5 @@
     <string name="bolusstopped">Bolus oprit</string>
     <string name="bolusstopping">Se oprește bolusul</string>
     <string name="combo_error_display_never">Niciodată</string>
+    <string name="unsafeusage">utilizare nesigură</string>
 </resources>
