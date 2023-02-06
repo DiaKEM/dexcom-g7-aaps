@@ -1,10 +1,8 @@
 package info.nightscout.androidaps.plugins.pump.medtronic.comm.history.pump
 
-import info.nightscout.shared.logging.AAPSLogger
-import info.nightscout.shared.logging.LTag
-import info.nightscout.androidaps.plugins.pump.common.utils.DateTimeUtil
-import java.util.*
-import kotlin.collections.ArrayList
+import info.nightscout.core.utils.DateTimeUtil
+import info.nightscout.rx.logging.AAPSLogger
+import info.nightscout.rx.logging.LTag
 
 /**
  * History page contains data, sorted from newest to oldest (0=newest..n=oldest)
@@ -19,19 +17,19 @@ class PumpHistoryResult(private val aapsLogger: AAPSLogger, searchEntry: PumpHis
     private val searchEntry: PumpHistoryEntry? = null
     private var searchDate: Long? = null
     private var searchType = SearchType.None
-    var unprocessedEntries: List<PumpHistoryEntry> = ArrayList()
+    var unprocessedEntries: MutableList<PumpHistoryEntry> = ArrayList()
     var validEntries: MutableList<PumpHistoryEntry> = ArrayList()
 
-    fun addHistoryEntries(entries: List<PumpHistoryEntry> /*, page: Int*/) {
+    fun addHistoryEntries(entries: MutableList<PumpHistoryEntry> /*, page: Int*/) {
         unprocessedEntries = entries
         //aapsLogger.debug(LTag.PUMPCOMM,"PumpHistoryResult. Unprocessed entries: {}", MedtronicUtil.getGsonInstance().toJson(entries));
         processEntries()
     }
 
     // TODO Bug #145 need to check if we had timeChange that went -1, that situation needs to be evaluated separately
-    fun processEntries() {
+    private fun processEntries() {
         var olderEntries = 0
-        Collections.reverse(unprocessedEntries)
+        unprocessedEntries.reverse()
         when (searchType) {
             SearchType.None      ->                 //aapsLogger.debug(LTag.PUMPCOMM,"PE. None search");
                 validEntries.addAll(unprocessedEntries)
@@ -43,7 +41,7 @@ class PumpHistoryResult(private val aapsLogger: AAPSLogger, searchEntry: PumpHis
                 aapsLogger.debug(LTag.PUMPCOMM, "PE. PumpHistoryResult. Search entry date: " + searchEntry!!.atechDateTime)
                 //val date = searchEntry.atechDateTime
                 for (unprocessedEntry in unprocessedEntries) {
-                    if (unprocessedEntry.equals(searchEntry)) {
+                    if (unprocessedEntry == searchEntry) {
                         //aapsLogger.debug(LTag.PUMPCOMM,"PE. Item found {}.", unprocessedEntry);
                         isSearchFinished = true
                         break
@@ -57,7 +55,7 @@ class PumpHistoryResult(private val aapsLogger: AAPSLogger, searchEntry: PumpHis
             }
 
             SearchType.Date      -> {
-                aapsLogger.debug(LTag.PUMPCOMM, "PE. Date search: Search date: " + searchDate)
+                aapsLogger.debug(LTag.PUMPCOMM, "PE. Date search: Search date: $searchDate")
                 for (unprocessedEntry in unprocessedEntries) {
                     if (unprocessedEntry.atechDateTime == 0L) {
                         aapsLogger.debug(LTag.PUMPCOMM, "PE. PumpHistoryResult. Search entry date: Entry with no date: $unprocessedEntry")

@@ -19,7 +19,6 @@
     <string name="combo_force_disabled_notification">Utilisation dangereuse : la pompe utilise un profil avec un taux basal différent du premier. Le mode Boucle a été désactivé. Sélectionner le premier profil sur la pompe et rafraîchir.</string>
     <string name="bolus_frequency_exceeded">Un bolus avec la même quantité d’insuline a été demandé au cours de la dernière minute. Pour prévenir l’administration accidentelle de deux bolus à la fois et pour protéger contre les bugs, ceci (bolus) n\'est pas autorisé.</string>
     <string name="combo_pump_connected_now">Maintenant</string>
-    <string name="combo_activity_reading_pump_history">Lecture historique pompe</string>
     <string name="combo_activity_setting_basal_profile">Définir le profil basal</string>
     <string name="combo_pump_cartridge_low_warrning">Niveau réservoir pompe bas</string>
     <string name="combo_pump_battery_low_warrning">Pile pompe faible</string>
@@ -44,7 +43,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Le pourcentage de basal a changé dans la pompe mais sa lecture a échoué</string>
     <string name="combo_activity_checking_for_history_changes">Vérification des modifications de l\'historique</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">De multiples bolus similaires viennent d\'être importés dans la même minute. Un seul enregistrement a pu être ajouté aux traitements. Veuillez vérifier la pompe et d\'ajouter manuellement un enregistrement de bolus en utilisant l\'onglet Careportal. Assurez vous de créer ce bolus avec un temps différent de tous les autres Bolus.</string>
-    <string name="about_link_urls">\n\ndocumentation :\nhttps://androidaps.readthedocs.io/fr/latest/\n\nfacebook :\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">Le dernier bolus enregistré date d\'il y a plus de 24h ou est dans le futur. Vérifiez que la date dans la pompe est correctement définie.</string>
     <string name="combo_suspious_bolus_time">L\'heure/date sur la pompe du dernier bolus administré semble erroné. L\'IA est probablement incorrecte. Vérifiez l\'heure/date de la pompe.</string>
     <string name="combo_bolus_count">Nombre de bolus</string>
@@ -57,4 +55,5 @@
     <string name="combo_error_display_never">Jamais</string>
     <string name="combo_error_display_error">En cas d\'erreur</string>
     <string name="combo_error_display_always">Toujours</string>
+    <string name="unsafeusage">utilisation dangereuse</string>
 </resources>

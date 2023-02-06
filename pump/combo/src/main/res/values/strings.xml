@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="combopump" translatable="false">Accu-Chek Combo</string>
+    <string name="combopump" translatable="false">Accu-Chek Combo (Ruffy)</string>
     <string name="combopump_shortname" translatable="false">COMBO</string>
     <string name="description_pump_combo">Pump integration for Accu-Chek Combo pumps, requires having ruffy installed</string>
     <string name="combo_programming_bolus">Programming pump for bolusing</string>
@@ -22,7 +22,6 @@
     <string name="combo_force_disabled_notification">Unsafe usage: the pump uses a different basal rate profile than the first. The loop has been disabled. Select the first profile on the pump and refresh.</string>
     <string name="bolus_frequency_exceeded">A bolus with the same amount was requested within the last two minutes. To prevent accidental double boluses and to guard against bugs this is disallowed.</string>
     <string name="combo_pump_connected_now">Now</string>
-    <string name="combo_activity_reading_pump_history">Reading pump history</string>
     <string name="combo_activity_setting_basal_profile">Setting basal profile</string>
     <string name="combo_pump_cartridge_low_warrning">Pump cartridge level is low</string>
     <string name="combo_pump_battery_low_warrning">Pump battery is low</string>
@@ -47,7 +46,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Basal rate changed on pump, but reading it failed</string>
     <string name="combo_activity_checking_for_history_changes">Checking for history changes</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">Multiple boluses with the same amount within the same minute were just imported. Only one record could be added to treatments. Please check the pump and manually add a bolus record using the Careportal tab. Make sure to create a bolus with a time no other bolus uses.</string>
-    <string name="about_link_urls">\n\ndocumentation:\nhttps://androidaps.readthedocs.io\n\nfacebook:\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">The last bolus is older than 24 hours or is in the future. Please check the date on the pump is set correctly.</string>
     <string name="combo_suspious_bolus_time">Time/date of the delivered bolus on pump seems wrong, IOB is likely incorrect. Please check pump time/date.</string>
     <string name="combo_bolus_count">Bolus count</string>
@@ -71,5 +69,7 @@
     <string name="key_combo_error_display_never" translatable="false">NEVER</string>
     <string name="key_combo_error_display_error" translatable="false">ON_ERROR</string>
     <string name="key_combo_error_display_always" translatable="false">ALWAYS</string>
+
+    <string name="unsafeusage">unsafe usage</string>
 
 </resources>

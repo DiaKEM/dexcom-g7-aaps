@@ -19,7 +19,6 @@
     <string name="combo_force_disabled_notification">Unsichere Verwendung: In der Pumpe ist nicht das erste Basalratenprofil gewählt. Der Loop wird deaktiviert, bis dies korrigiert ist.</string>
     <string name="bolus_frequency_exceeded">Ein gleich großer Bolus wurde in den letzten zwei Minuten angefordert. Dies ist nicht zulässig, um ungewollte Doppelboli zu verhindern und vor eventuellen Bugs zu schützen.</string>
     <string name="combo_pump_connected_now">Jetzt</string>
-    <string name="combo_activity_reading_pump_history">Historie wird gelesen</string>
     <string name="combo_activity_setting_basal_profile">BR-Profil wird aktualisiert.</string>
     <string name="combo_pump_cartridge_low_warrning">Das Reservoir in der Pumpe ist fast leer</string>
     <string name="combo_pump_battery_low_warrning">Die Batterie in der Pumpe ist fast leer</string>
@@ -44,7 +43,6 @@
     <string name="combo_error_failure_reading_changed_basal_rate">Das Einlesen der geänderten Basalrate in der Pumpe schlug fehl</string>
     <string name="combo_activity_checking_for_history_changes">Änderungen der Historie werden gesucht</string>
     <string name="combo_error_multiple_boluses_with_identical_timestamp">Der Import mehrerer Boli der gleichen Menge, abgegeben in der gleichen Minute, ist gescheitert: Nur ein Datensatz konnte den Behandlungen hinzugefügt werden. Bitte überprüfe die Pumpe und verwende das Careportal, um fehlende Einträge hinzuzufügen. Stelle sicher, dass keine Einträge für genau dieselbe Minute mit derselben  Menge hinzugefügt werden.</string>
-    <string name="about_link_urls">\n\nDokumentation:\nhttps://androidaps.readthedocs.io\n\nLooper-Community:\nhttps://loopercommunity.org\n\nfacebook:\nhttps://www.facebook.com/groups/AndroidAPSUsers</string>
     <string name="combo_check_date">Der letzte Bolus liegt mehr als 24 Stunden zurück oder liegt in der Zukunft. Prüfe bitte das Datum auf der Pumpe.</string>
     <string name="combo_suspious_bolus_time">Zeit/Datum des abgegebenen Boluses auf der Pumpe erscheint falsch, IOB ist wahrscheinlich nicht korrekt. Bitte prüfe Zeit/Datum der Pumpe.</string>
     <string name="combo_bolus_count">Anzahl Boli</string>
@@ -57,4 +55,5 @@
     <string name="combo_error_display_never">Nie</string>
     <string name="combo_error_display_error">Bei Fehler</string>
     <string name="combo_error_display_always">Immer</string>
+    <string name="unsafeusage">Unsichere Benutzung</string>
 </resources>
