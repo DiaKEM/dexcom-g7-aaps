@@ -46,7 +46,7 @@ class VersionCheckerUtils @Inject constructor(
     }
 
     private fun checkVersion() =
-        if (isConnected()) {
+        if (false) {
             Thread {
                 try {
                     val definition: String = URL("https://raw.githubusercontent.com/nightscout/AndroidAPS/versions/definition.json").readText()
